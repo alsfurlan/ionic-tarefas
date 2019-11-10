@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form (ngSubmit)="salvar()">
+    <ion-input placeholder="Digite a descrição da tarefa" [(ngModel)]="tarefa.descricao"  [ngModelOptions]="{standalone: true}"></ion-input>
+    <ion-button type="submit">Salvar</ion-button>
+    <ion-button color="danger" routerLink="/tarefas">Cancelar</ion-button>
+  </form>
+</ion-content>
+
